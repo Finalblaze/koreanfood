@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header class="header" id="block1">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-xxl">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <a class="logo-title-center" href="#block1">
+                        <h1 class="logo-title">Korean Food</h1>
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#block1">Главная</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#block2">Каталог</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#block3">Заказать</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#block4">Контакты</a>
+                      </li>
+                      
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+            <!-- <nav id="nav" class="nav">
+                <ul class="menu-list menu-right">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Главная</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Каталог</a>
+                    </li>
+                </ul>
+                <a class="logo-title-center" href="#">
+                    <h1 class="logo-title">Korean Food</h1>
+                </a>
+                <ul class="menu-list menu-left">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Заказать</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
+        
+    </header>
+
+    <div class="premain" data-aos="zoom-in">
+        
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class="main-menu" id="block1">
+                <div class="text text2">
+                    <h1 class="subtitle">Лучшая еда в Чите</h1>
+                    <h4 class="discr">Доставляется прямиком из Кореи.
+                        В нашем распоряжении сама различная еда.
+                        Очень вкусно и качественно. 
+                        Спасибо, что выбираете нас!
+                    </h4>
+                </div>
+                <div class="food">
+                    <img class="food-img" src="img/food7.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="middle" data-aos="fade-right">
+        
+    </div>
+
+    <div class="wrapper" id="block2">
+        <div class="container">
+            <div class="slider">
+                <div><img src="img/food1.jpeg" alt=""></div>
+                <div><img src="img/food2.jpeg" alt=""></div>
+                <div><img src="img/food3.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="order" id="block3">
+        <div class="container">
+            <div class="forma" action="send.php" method="POST">
+                <div class="form-at">
+                    <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                        <input class="input-at" type="text" name="name-at" placeholder="Ваше имя" />
+                        <span class="focus-input-at"></span>
+                    </div>
+                    <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                        <input class="input-at" type="text" name="email-at" placeholder="Ваш телефон или email" />
+                        <span class="focus-input-at"></span>
+                    </div>
+                    <div class="validate-input-at" data-validate="Обязательное поле">
+                        <textarea class="input-at" name="message-at" placeholder="Ваше сообщение"></textarea>
+                        <span class="focus-input-at"></span>
+                    </div>
+                    <input checked="checked" class="input-at" id="checkbox-at" type="checkbox" name="checkbox-at" onchange="document.getElementById('submit-at').disabled = !this.checked;" />
+                    <label for="checkbox-at">
+                        Согласен с отправкой информации
+                    </label> 
+                    <input type="hidden" name="subject-at" value="Тема формы">
+                    <button id="submit-at" class="form-at-btn">Отправить</button>
+                </div>
+                <div class="result-at"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts" id="block4">
+        <h1 class="quest">Сотрудничество и вопросы:</h1>
+        <div class="vk"><a href="https://vk.com/thefinalblaze">Моя страничка в ВК</a></div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
